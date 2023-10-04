@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<!-- объявляет тип документа как HTML -->
+<html lang="ru">
+    <!-- указывает язык документа (русский) -->
+    <head>
+        <title>burakova.ru</title>
+        <!-- задает заголовок документа, который будет отображаться во вкладке браузера. -->
+        <meta charset="UTF-8">
+        <!--устанавливает кодировку документа как UTF-8 для правильного отображения символов.-->
+        <link rel="stylesheet" type="text/css" href="C:\Users\tvoro\OneDrive\Рабочий стол\css.css">
+        <!-- подключает внешний CSS-файл для стилизации страницы. -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <!-- подключает внешний шрифт из Google Fonts для использования на странице. -->
+    </head>
+    <body>
+        <header>
+            <!--открывающий тег для секции заголовка страницы.  -->
+            <nav>
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <!-- пункт меню с ссылкой -->
+                  <li><a href="#">Образование</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+                <!-- закрывающий тег для неупорядоченного списка (меню). -->
+              </nav>
+        </header> 
+        <main> 
+        <h1>Буракова Полина</h1>
+        <img src="C:\Users\tvoro\OneDrive\Рабочий стол\Polina.jpg" alt="My Photo">
+        <p>Образование - это непреходящая ценность, которая является фундаментом нашего развития и успеха.</p>
+        <table>
+            <tr>
+              <th>Характеристики</th>
+              <th>Описание</th>
+            </tr>
+            <tr>
+              <td>Факультет</td>
+              <td>Информационные технологии</td>
+            </tr>
+            <tr>
+                <td>Курс</td>
+                <td>Второй</td>
+              </tr>
+              <tr>
+                <td>Группа</td>
+                <td>221-362</td>
+              </tr>
+            <tr>
+              <td>Направление</td>
+              <td>09.03.03 Прикладная информатика</td>
+            </tr>
+            <tr>
+                <td>Специализация</td>
+                <td>Корпоративные информационные системы</td>
+              </tr>
+              <tr>
+                <td>Форма обучения</td>
+                <td>Очная</td>
+              </tr>
+              <tr>
+                <td>Вид финансирования</td>
+                <td>Бюджетная</td>
+              </tr>
+              <tr>
+                <td>Уровень образования</td>
+                <td>Бакалавриат</td>
+              </tr>
+          </table>
+        <footer>
+        <p>Контактная информация: +7(996)-138-62-58 | tvorozhok567@mail.ru</p>
+          </footer>          
+          <div class="form-container">
+            <h3>Форма обратной связи</h3>
+            <form name="form" action="https://httpbin.org/post" enctype="multipart/form-data" method="post" class="form">
+                <div class="form-row">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label>Откуда узнали о нас:</label>
+                    <div>
+                        <label for="radio1">
+                            <input type="radio" id="radio1" name="source" value="radio1" required> Реклама
+                        </label>
+                    </div>
+                    <div>
+                        <label for="radio3">
+                            <input type="radio" id="radio3" name="source" value="radio3" required> СМИ
+                        </label>
+                    </div>
+                </div>
+              
+                <div class="form-row">
+                    <label for="type">Тип обращения:</label>
+                    <select id="type" name="type" required>
+                        <option value="" selected disabled>Выберите тип</option>
+                        <option value="complaint">Жалоба</option>
+                        <option value="suggestion">Предложение</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Текст сообщения:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="attachment">Вложения:</label>
+                    <input type="file" id="attachment" name="attachment">
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox" id="consent" name="consent" required> Даю согласие на обработку персональных данных
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+      </main>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  background-image: url("path/to/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #00CCFF;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input_form {
+  margin-bottom: 10px;
+}
+
+.input_form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.checkbox input {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.input_form input[type="submit"] {
+  background-color: #00CCFF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+  
